@@ -4,6 +4,8 @@ Resource    ../Resources/Keywords/LoginKeywords.robot
 Resource    ../Resources/Keywords/CommonKeywords.robot
 Resource    ../Resources/Keywords/HomePageKeywords.robot
 Resource    ../Resources/Keywords/AddProductKeywords.robot
+*** Variables ***
+${quantity}     10
 *** Test Cases ***
 Login test case
     Navigate to Mazaady portal
@@ -23,7 +25,7 @@ Add Auction test case
     Select year
     Select condition
     Select country made
-    Add product quantity     10
+    Add product quantity      ${quantity}
     Select Country Frist item
     Select Region frist item
     Select City frist item
