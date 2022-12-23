@@ -107,7 +107,7 @@ Return_Exchange_policy_txt
 
 upload_Main_Image
     wait until element is visible       //div[@id='step-2']//button[@type='button'][normalize-space()='Next Step']
-    choose file     main_image        C:/Users/QC/PycharmProjects/Mazaady Portal/Resources/Upload/2.jpg
+    choose file     main_image         ${exec_dir}//Resources//Upload//2.jpg
     sleep    2
 
 NextStep3_button
